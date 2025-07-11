@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filipino Cuisine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1>Filipino Cuisine</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#dishes">Dishes</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore the Rich Flavors of the Philippines</h2>
+    <p>From Adobo to Lechon, discover the heart of Filipino food.</p>
+  </section>
+
+  <section id="dishes" class="dishes">
+    <h2>Featured Dishes</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/adobo.jpg" alt="Chicken Adobo" onclick="openModal(this)">
+        <h3>Chicken Adobo</h3>
+        <p>A classic savory-sour stew of chicken simmered in vinegar and soy sauce.</p>
+      </div>
+      <div class="card">
+        <img src="assets/sinigang.jpg" alt="Sinigang" onclick="openModal(this)">
+        <h3>Sinigang</h3>
+        <p>A sour tamarind soup filled with vegetables and your choice of meat.</p>
+      </div>
+      <div class="card">
+        <img src="assets/lechon.jpg" alt="Lechon" onclick="openModal(this)">
+        <h3>Lechon</h3>
+        <p>Whole roasted pig with crispy skin—perfect for celebrations!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Filipino Food</h2>
+    <p>
+      Filipino cuisine reflects a fusion of many cultural influences: Malay, Spanish, Chinese, and American. Meals are often centered around rice and include a variety of sweet, sour, and savory dishes.
+    </p>
+  </section>
+
+  <!-- Image Modal -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Filipino Cuisine. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
